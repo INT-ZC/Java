@@ -4,6 +4,23 @@ import java.util.ArrayList;
 public class Sort_Array_By_Parity {
     public int[] sortArrayByParity(int[] A)
     {
+        int pointer = 0;
+
+        for(int i = 0; i < A.length; i++)
+        {
+            if((A[i] % 2) == 0)
+            {
+                int temp = A[i];
+                A[i] = A[pointer];
+                A[pointer] = temp;
+                pointer ++;
+            }
+        }
+
+        return A;
+    }
+    /*
+    {
         ArrayList<Integer> even = new ArrayList();
         ArrayList<Integer> odd = new ArrayList();
 
@@ -15,4 +32,5 @@ public class Sort_Array_By_Parity {
         even.addAll(odd);
         return even.stream().mapToInt(Integer::intValue).toArray();
     }
+    */
 }
