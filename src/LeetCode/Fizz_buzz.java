@@ -7,18 +7,18 @@ public class Fizz_buzz
 {
 	public List<String> fizzBuzz(int n)
 	{
-		List a = new ArrayList();
+		List<String> result = new ArrayList<String>();
 		for (int i = 1; i < n+1; i++)
 		{
 			if (i % 3 == 0 && i % 5 == 0)
-				a.add("FizzBuzz");
+				result.add("FizzBuzz");
 			else if (i % 3 == 0)
-				a.add("Fizz");
+				result.add("Fizz");
 			else if (i % 5 == 0)
-				a.add("Buzz");
+				result.add("Buzz");
 			else
-				a.add(String.valueOf(i));
+				result.add(String.valueOf(i));
 		}
-		return a;
+		return result;
 	}
 }
