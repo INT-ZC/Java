@@ -2,25 +2,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class test
-
 {
-    public List<String> fizzBuzz(int n)
+    public static int test(int n)
     {
-        List<String> result = new ArrayList<String>();
-        for (int i = 0; i < 5; i++) {
-            if (i % 3 == 0) {
-                if (i % 5 == 0) {
-                    result.add("FizzBuzz");
-                } else {
-                    result.add("Fizz");
-                }
-            } else if (i % 5 == 0) {
-                result.add("Buzz");
-            } else {
-                result.add(Integer.toString(i));
+        if (n == 0) { return 0; }
+        else if (n == 1 || n == 2) { return 1; }
+        else
+            {
+                int[] fib = new int[n+1];
+                fib[0] = 0;
+                fib[1] = 1;
+                fib[2] = 1;
+                for (int i = 3; i <= n; i++) { fib[i] = fib[i-1] + fib[i-2]; }
+                return fib[fib.length-1];
             }
-        }
-        return result;
     }
 
     public static void main(String[] args)
