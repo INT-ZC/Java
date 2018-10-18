@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Reverse_String
+public class LC0344_ReverseString
 {
 	public static String reverseString(String s) {
 		char[] c = s.toCharArray();

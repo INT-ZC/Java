@@ -2,7 +2,7 @@ package LeetCode;
 
 import java.util.Scanner;
 
-public class Two_Sum
+public class LC0001_TwoSum
 {
 	public static int[] twoSum(int[] nums, int target)
 	{

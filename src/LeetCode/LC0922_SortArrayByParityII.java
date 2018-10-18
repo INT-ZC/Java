@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Sort_Array_By_Parity_II
+public class LC0922_SortArrayByParityII
 {
     public int[] sortArrayByParityII(int[] A)
     {

@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Island_Perimeter
+public class LC0463_IslandPerimeter
 {
 	public int islandPerimeter(int[][] grid)
 	{

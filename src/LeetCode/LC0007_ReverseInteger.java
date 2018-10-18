@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class Reverse_Integer
+public class LC0007_ReverseInteger
 {
 	public int reverse(int x) {
 		if (x == Integer.MIN_VALUE)

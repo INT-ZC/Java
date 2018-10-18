@@ -2,7 +2,7 @@ package LeetCode;
 
 import java.util.*;
 
-public class Find_the_Difference
+public class LC0389_FindTheDifference
 {
 	public static char findTheDifference(String s, String t)
 	{

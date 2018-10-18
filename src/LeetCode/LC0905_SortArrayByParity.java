@@ -1,7 +1,7 @@
 package LeetCode;
 import java.util.ArrayList;
 
-public class Sort_Array_By_Parity {
+public class LC0905_SortArrayByParity {
     public int[] sortArrayByParity(int[] A)
     {
         int pointer = 0;
